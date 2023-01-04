@@ -4,104 +4,100 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: none;
 }
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .title {
   color: blanchedalmond;
 }
 
 
 h1 {
-  font-size: clamp(1rem, 2vw +1rem, 3rem);
+  font-size: clamp(1rem, 2vw + 1rem, 3rem);
+  font-weight: bolder;
 }
-body{
-    background-image: url(/aak-/pexels-gdtography-911738.jpg);
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
-footer{
-    position: absolute;
-width: 100%;
-height: 91px;
-top: 100%px;
-bottom: 0;
-background: rgba(0, 0, 0, 0.438);
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-.tel{
-    position: absolute;
-width: 228px;
-height: 48px;
-left: 1054px;
-top: 25px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 24px;
-color: rgb(255, 255, 255);
+
+nav p {
+  margin-right: 2rem;
 }
-.copyright{
-    position: absolute;
-width: 262px;
-height: 24px;
-left: 589px;
-top: 55px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-color: rgb(255, 255, 255);
+
+nav ul {
+  display: grid;
+  place-items: center;
 }
-.lang{
-    position: absolute;
-width: 163px;
-height: 24px;
-left: 20px;
-top: 40px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-color: rgb(255, 255, 255);
+
+nav ul li {
+  list-style: none;
 }
-.en{
-font-weight: 800;
+
+nav ul li a {
+  text-decoration: none;
 }
-.loc{
-    position: absolute;
-width: 82px;
-height: 24px;
-left: 550px;
-top: 15px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 24px;
-color: #FFFFFF;
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
 }
-.part{
-    position: absolute;
-width: 113px;
-height: 24px;
-left: 680px;
-top: 15px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 24px;
-color: #FFFFFF;
+
+.left_content {
+  height: 100vh;
+  padding: 4rem;
+  background-color: #f1cdd7;
 }
-.blog{
-    position: absolute;
-width: 55px;
-height: 24px;
-left: 780px;
-top: 15px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 24px;
-color: #FFFFFF;
+
+.dribble_logo {
+  width: 100px;
+  margin-bottom: 2rem;
+  /* transition: all 0.3s ease-in-out; */
+}
+
+.dribble_logo path,
+h1 {
+  opacity: 0.5;
+}
+
+.logo_link:hover path {
+  opacity: 0.7;
+}
+
+.rignt_content{
+  display: flex;
+  flex-direction: column;
+
+}
+button {
+  width: 150px;
+  background-color: rgb(253, 82, 110);
+  color: white;
+  border-radius: 4px;
+  border: none;
+  padding: 5px;
 }
