@@ -5,6 +5,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .title {
   color: blanchedalmond;
 }
@@ -13,5 +18,73 @@
 }
 
 h1 {
-  font-size: clamp(1rem, 2vw +1rem, 3rem);
+  font-size: clamp(1rem, 2vw + 1rem, 3rem);
+  font-weight: bolder;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav p {
+  margin-right: 2rem;
+}
+
+nav ul {
+  display: grid;
+  place-items: center;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
+}
+
+.left_content {
+  height: 100vh;
+  padding: 4rem;
+  background-color: #f1cdd7;
+}
+
+.dribble_logo {
+  width: 100px;
+  margin-bottom: 2rem;
+  /* transition: all 0.3s ease-in-out; */
+}
+
+.dribble_logo path,
+h1 {
+  opacity: 0.5;
+}
+
+.logo_link:hover path {
+  opacity: 0.7;
 }
